@@ -28,3 +28,7 @@ def get_recipe(request):
         form = RecipeForm()
 
     return render(request, "recipe.html", {"form": form})
+
+
+def index(request):
+    return render(request, "index.html")
