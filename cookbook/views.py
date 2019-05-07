@@ -18,6 +18,7 @@ def get_recipe(request):
             r = Recipe(
                 recipe_name=form.cleaned_data["name"],
                 recipe_ingredient=form.cleaned_data["ingredient_main"],
+                recipe_time=form.cleaned_data["preparation_time"],
                 recipe_source=form.cleaned_data["source"],
             )
             r.save()
