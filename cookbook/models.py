@@ -11,6 +11,7 @@ class Recipe(models.Model):
     recipe_time = models.CharField(
         max_length=1, choices=PREPARATION_TIME_CHOICES, default="S"
     )
+    recipe_vegetarian = models.BooleanField(default=False)
     recipe_source = models.CharField(max_length=200)
 
     def __str__(self):
