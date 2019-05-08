@@ -17,3 +17,8 @@ class RecipeForm(forms.Form):
     source = forms.CharField(
         label="Recipe source", widget=forms.Textarea, max_length=100
     )
+
+
+class DateSelectionForm(forms.Form):
+    from_date = forms.DateField()
+    to_date = forms.DateField()
